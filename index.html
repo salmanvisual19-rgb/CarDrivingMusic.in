@@ -348,5 +348,5 @@ if(searchInput){
 }
 
 render();loadPackagedMetadata();render();if(tracks.length)ensureTrackCover(tracks[0]).then(c=>{if(c){tracks[0].cover=c;render();if(index===0)$('cover').src=c}});load(0,false);const fsBtn=$('fullscreenBtn');if(fsBtn)fsBtn.onclick=()=>{const el=document.documentElement;(document.fullscreenElement?document.exitFullscreen():el.requestFullscreen?.()).catch?.(()=>{});};const center=$('center'),car=$('carWrap');center.onpointermove=e=>{const r=center.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;car.style.transform=`rotateX(${5-y*12}deg) rotateY(${-8+x*18}deg) translateZ(45px) scale(1.02)`};center.onpointerleave=()=>car.style.transform='rotateX(5deg) rotateY(-8deg) translateZ(30px)';
-</script>
+</script><script src="./supabase-auth.js"></script>
 </body></html>
